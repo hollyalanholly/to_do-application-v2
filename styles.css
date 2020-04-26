@@ -1,0 +1,11 @@
+body {
+    background-color: darkslategrey;
+    color: rgb(238, 199, 236);
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}   
+
+h1 {
+    color: coral;
+}

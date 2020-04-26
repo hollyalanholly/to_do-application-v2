@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Holly's Mega TODO List</h1><br><br>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" checked>All to-do's
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2">This wk to-do's
+        </label>
+    </div>
+    <br>
+
+    <br><h2>New To-do</h2>
+
+    <form action="/action_page.php">
+        <label for="to-do">To-do:</label><br>
+        <input type="text" id="to-do" name="to-do" value="blank"><br>
+        <label for="due date">Due date:</label><br>
+        <input type="date" id="due date" name="due date">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">High</button>
+                <button class="dropdown-item" type="button">Medium</button>
+                <button class="dropdown-item" type="button">Low</button>
+              </div>
+        </div><br>
+        
+        <input type="submit" value="Submit">
+      </form> 
+      <br>
+      
+    
+
+      <h2>Current To-do's</h2>
+
+
+</body>
