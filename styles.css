@@ -9,3 +9,31 @@ body {
 h1 {
     color: coral;
 }
+
+#to-do {
+    width: 85%;
+    border-radius: 5px;
+  }
+
+  #due-date { 
+    border-radius: 5px;
+  }
+
+  #submit { 
+    border-radius: 5px;
+  }
+
+  #high {
+      background-color: coral;
+      color: black;
+  }
+
+  #medium {
+    background-color: rgb(255, 252, 80);
+    color: black;
+}
+
+#low {
+    background-color: rgba(158, 233, 114, 0.911);
+    color:black;
+}
