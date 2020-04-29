@@ -14,49 +14,50 @@
 </head>
 
 <body>
-    <div id="toggle-section"></div>
-    <h1>Holly's Mega TODO List</h1><br><br>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-            <input type="radio" name="options" id="option1" checked>All to-do's
-        </label>
-        <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option2">This wk to-do's
-        </label>
-    </div>
-    </div>
-    <br>
+    <div id="title-new-todo">
 
-    <br>
-    <!-- //New to do section -->
-    <div id="New-to-so-section">
-        <h2>New To-do</h2>
+        <h1>Holly's Mega <br>To-do List</h1><br>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" checked>All to-do's
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2">This wk to-do's
+            </label>
+        </div>
+        <br><br>
+        <!-- //New to do section -->
+        <div id="New-to-so-section">
+            <h2>New To-do</h2>
 
-        <form>
-            <div class="row">
-                <div class="col-7">
-                    <label for="to-do">To-do:</label><br>
-                    <input id="to-do" type="text" class="form-control" placeholder="To Do">
+            <form>
+                <div class="row">
+                    <div class="col-7">
+                        <label for="to-do">To-do:</label><br>
+                        <input id="to-do" type="text" class="form-control" placeholder="To Do">
+                    </div>
+                    <div class="col-auto">
+                        <label for="due-date">Due date:</label><br>
+                        <input id="due-date" type="date" class="form-control" placeholder="Due Date">
+                    </div>
+                    <div class='col-auto'>
+                        <label for="priority">Priority:</label><br>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option id="high" value="1">High</option>
+                            <option id="medium" value="2">Medium</option>
+                            <option id="low" value="3">Low</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-auto">
-                    <label for="due-date">Due date:</label><br>
-                    <input id="due-date" type="date" class="form-control" placeholder="Due Date">
-                </div>
-                <div class='col-auto'>
-                    <label for="priority">Priority:</label><br>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option id="high" value="1">High</option>
-                        <option id="medium" value="2">Medium</option>
-                        <option id="low" value="3">Low</option>
-                    </select>
-                </div>
-            </div>
-        </form><br>
+            </form><br>
 
-        <input type="submit" id="submit" value="Add to-do">
-        </form>
+            <input type="submit" id="submit" value="Add to-do">
+            </form>
+        </div>
     </div>
+
+    <!-- </div> end of blocked bit on website -->
     <br>
 
     <!-- //current to do's -->
@@ -64,76 +65,78 @@
         <h2>Current To-do's</h2>
         <h6>This Week: "This week's date with javascript?"</h6>
         <div id="current">
-        <table>
-            <tr id= "tr title"> 
-              <th>To-do's</th>
-              <th>Due Date</th>
-            </tr>
-            <tr id= "tr1"> 
-              <td>Buy some cheese</td>
-              <td>01/05/2020</td>
-            </tr>
-            <tr id= "tr2"> 
-              <td>Drink a Wine</td>
-              <td>01/05/2020</td>
-            </tr>
-            <tr id="tr3">
-              <td>Wash Jeffery the cat</td>
-              <td>29/04/2020</td>
-            </tr>
-            <tr id="tr4">
-                <td>Make an apple pie</td>
-                <td>29/04/2020</td>
-              </tr>
-            </tr>
-          </table>
-          <br>
+            <table>
+                <tr id="tr title">
+                    <th>To-do's</th>
+                    <th>Due Date</th>
+                </tr>
+                <tr id="tr1">
+                    <td>Buy some cheese</td>
+                    <td>01/05/2020</td>
+                </tr>
+                <tr id="tr2">
+                    <td>Drink a Wine</td>
+                    <td>01/05/2020</td>
+                </tr>
+                <tr id="tr3">
+                    <td>Wash Jeffery the cat</td>
+                    <td>29/04/2020</td>
+                </tr>
+                <tr id="tr4">
+                    <td>Make an apple pie</td>
+                    <td>29/04/2020</td>
+                </tr>
+                </tr>
+            </table>
+            <br>
         </div>
-          
-          </body>
-          </html>
-          
-        <h6>Next Week: "Next week's date with javascript?"</h6>
-        <h6>Future to-do's</h2>
-    </div>
-
-      <!-- //DONE -->
-      <div id="Completed Section">
-        <h2>Completed To-do's</h2>
-        <div id="Completed">
-        <table>
-            <tr id= "tr completed"> 
-              <th>To-do's</th>
-              <th>Due Date</th>
-              <th>Completed Date</th>
-            </tr id=trc>
-            <tr> 
-              <td>Deflate Paddle Pool</td>
-              <td>24/04/2020</td>
-              <td>25/04/2020</td>
-
-            </tr>
-            <tr id= "tr c2"> 
-              <td>Drink a Rum</td>
-              <td>23/04/2020</td>
-              <td>23/04/2020</td>
-            </tr>
-            <tr id="tr c3">
-              <td>Wash Alan P Duckworth</td>
-              <td>20/04/2020</td>
-              <td>20/04/2020</td>
-            </tr>
-            <tr id="tr c4">
-                <td>Buy wraps</td>
-                <td>19/04/2020</td>
-                <td>25/04/2020</td>
-              </tr>
-            </tr>
-          </table>
-          <br>
-        </div>
-          
-          </body>
-          </html>
 
 </body>
+
+</html>
+
+<h6>Next Week: "Next week's date with javascript?"</h6>
+<h6>Future to-do's</h2>
+    </div>
+
+    <!-- //DONE -->
+    <div id="Completed Section">
+        <h2>Completed To-do's</h2>
+        <div id="Completed">
+            <table>
+                <tr id="tr completed">
+                    <th>To-do's</th>
+                    <th>Due Date</th>
+                    <th>Completed Date</th>
+                </tr id=trc>
+                <tr>
+                    <td>Deflate Paddle Pool</td>
+                    <td>24/04/2020</td>
+                    <td>25/04/2020</td>
+
+                </tr>
+                <tr id="tr c2">
+                    <td>Drink a Rum</td>
+                    <td>23/04/2020</td>
+                    <td>23/04/2020</td>
+                </tr>
+                <tr id="tr c3">
+                    <td>Wash Alan P Duckworth</td>
+                    <td>20/04/2020</td>
+                    <td>20/04/2020</td>
+                </tr>
+                <tr id="tr c4">
+                    <td>Buy wraps</td>
+                    <td>19/04/2020</td>
+                    <td>25/04/2020</td>
+                </tr>
+                </tr>
+            </table>
+            <br>
+        </div>
+
+        </body>
+
+        </html>
+
+        </body>
