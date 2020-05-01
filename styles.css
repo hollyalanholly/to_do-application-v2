@@ -1,26 +1,36 @@
 body {
     background-color:wheat
-    color:  slategray
+    slategray
     font-size: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }   
 
+/* headers */
+h1 {
+    color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 90px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;        
+}
+
+
+/* new to do section */
 #title-new-todo {
     background-color: wheat;
     background-image: url(img/bkgd.png);
+    width:100%;      
 }
 
-h1 {
-    color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 90px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; 
-    
+#toggleh1 {
+    width: 50%;
+    float: left;   
+    background-image: url(img/bkgd.png);
 }
 
-
-h1, h2 {
-    
-    text-align: center;
+#New-to-do-section {
+    width: 50%;
+    float: right;   
 }
+
+/* current to do section */
 
 #to-do {
     width: 85%;
@@ -52,29 +62,37 @@ h1, h2 {
 
 /* Current to do's */
 
-#current, #Completed {
-    
+#current-to-do-section, #completed-container {
     border-radius: 10px;
     padding: 5px;
-    background-color: whitesmoke;
-    width: 98%;
-    
+    background-color:whitesmoke;
+    width: 98%;   
+    float: left;
 }
 
+/* Playing with the current to do table */
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 90%;
-    
-  }
+    width: 99%;
+    table-layout: auto;
+}
+/* this is amending the widths and layout of table */
+th.table-done, th.delete {
+  width: 6%
+}
+th.table-due-date {
+  width: 15%; 
+}
   
   td, th {
-    border-radius: 50px;
+    border-radius: 5px;
     border: darkslategrey;
     text-align: left;
-    padding: 8px;
+    padding: 5px;
+    
   }
-  
+ 
   #tr2 {
       background-color: coral;
   }
@@ -92,6 +110,18 @@ table {
 }
 
 /* completed */
+
+
+
+th.complete-due-date, th.completed-date  {
+    width: 7%;
+  }
+
+  th.undo {
+      width: 4%;
+  }
+
+
 
 
  

@@ -15,24 +15,28 @@
 
 <body>
     <div id="title-new-todo">
-
-        <h1>Holly's Mega <br>To-do List</h1><br>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active">
-                <input type="radio" name="options" id="option1" checked>All to-do's
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="options" id="option2">This wk to-do's
-            </label>
+        <!-- container -->
+        <!-- divbox 1 -->
+        <div id="toggleh1">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" checked>All to-do's
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2">This wk to-do's
+                </label>
+            </div><br>
+            <h1>Holly's Mega <br>To-do List</h1><br>
         </div>
-        <br><br>
-        <!-- //New to do section -->
-        <div id="New-to-so-section">
+        <!-- end of divbox1 -->
+
+        <!-- //New to do section which is div box 2 -->
+        <div id="New-to-do-section">
             <h2>New To-do</h2>
 
             <form>
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-12">
                         <label for="to-do">To-do:</label><br>
                         <input id="to-do" type="text" class="form-control" placeholder="To Do">
                     </div>
@@ -58,7 +62,7 @@
     </div>
 
     <!-- </div> end of blocked bit on website -->
-    <br>
+    <br><br>
 
     <!-- //current to do's -->
     <div id="current-to-do-section">
@@ -67,76 +71,107 @@
         <div id="current">
             <table>
                 <tr id="tr title">
-                    <th>To-do's</th>
-                    <th>Due Date</th>
+                    <th class="table-todo">To-do</th>
+                    <th class="table-due-date"> Due Date</th>
+                    <th class="table-done"></th>
+                    <th class="delete"></th>
                 </tr>
                 <tr id="tr1">
                     <td>Buy some cheese</td>
                     <td>01/05/2020</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Done</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Delete</button>
+                    </td>
                 </tr>
                 <tr id="tr2">
                     <td>Drink a Wine</td>
                     <td>01/05/2020</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Done</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Delete</button>
+                    </td>
                 </tr>
                 <tr id="tr3">
                     <td>Wash Jeffery the cat</td>
                     <td>29/04/2020</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Done</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Delete</button>
+                    </td>
                 </tr>
                 <tr id="tr4">
                     <td>Make an apple pie</td>
                     <td>29/04/2020</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Done</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark">Delete</button>
+                    </td>
                 </tr>
                 </tr>
             </table>
             <br>
         </div>
+        <h6>Next Week: "Next week's date with javascript?"</h6>
+        <h6>Future to-do's</h2>
+    </div>
 
+    <!-- //DONE -->
+    <div id="completed-container">
+        <h2>Completed to-do's</h2>
+            <div id="completed">
+                <table>
+                    <tr id="tr completed">
+                        <th class= "to-do">To-do's</th>
+                        <th class = "due-date">Due Date</th>
+                        <th class ="completed-date">Completed Date</th>
+                        <th class="undo"></th>
+                    </tr id=trc>
+                    <tr>
+                        <td>Deflate Paddle Pool</td>
+                        <td>24/04/2020</td>
+                        <td>25/04/2020</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-dark">Undo</button>
+                        </td>
+
+                    </tr>
+                    <tr id="tr c2">
+                        <td>Drink a Rum</td>
+                        <td>23/04/2020</td>
+                        <td>23/04/2020</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-dark">Undo</button>
+                        </td>
+                    </tr>
+                    <tr id="tr c3">
+                        <td>Wash Alan P Duckworth</td>
+                        <td>20/04/2020</td>
+                        <td>20/04/2020</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-dark">Undo</button>
+                        </td>
+                    </tr>
+                    <tr id="tr c4">
+                        <td>Buy wraps</td>
+                        <td>19/04/2020</td>
+                        <td>25/04/2020</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-dark">Undo</button>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
 </body>
 
 </html>
 
-<h6>Next Week: "Next week's date with javascript?"</h6>
-<h6>Future to-do's</h2>
-    </div>
-
-    <!-- //DONE -->
-    <div id="Completed Section">
-        <h2>Completed To-do's</h2>
-        <div id="Completed">
-            <table>
-                <tr id="tr completed">
-                    <th>To-do's</th>
-                    <th>Due Date</th>
-                    <th>Completed Date</th>
-                </tr id=trc>
-                <tr>
-                    <td>Deflate Paddle Pool</td>
-                    <td>24/04/2020</td>
-                    <td>25/04/2020</td>
-
-                </tr>
-                <tr id="tr c2">
-                    <td>Drink a Rum</td>
-                    <td>23/04/2020</td>
-                    <td>23/04/2020</td>
-                </tr>
-                <tr id="tr c3">
-                    <td>Wash Alan P Duckworth</td>
-                    <td>20/04/2020</td>
-                    <td>20/04/2020</td>
-                </tr>
-                <tr id="tr c4">
-                    <td>Buy wraps</td>
-                    <td>19/04/2020</td>
-                    <td>25/04/2020</td>
-                </tr>
-                </tr>
-            </table>
-            <br>
-        </div>
-
-        </body>
-
-        </html>
-
-        </body>
