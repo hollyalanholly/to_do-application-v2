@@ -20,7 +20,7 @@ h6 {
     background-color: wheat;
     background-image: url(img/bkgd.png);
     width:100%; 
-    flex-wrap: wrap;   
+    
 }
 #toggleh1 {
     width: 50%;
@@ -30,6 +30,11 @@ h6 {
 #New-to-do-section {
     width: 50%;
     float: right;   
+    flex-wrap: wrap;   
+}
+
+.flex-New-to-do-section {
+    flex-wrap: wrap; 
 }
 
 /* current to do section */
@@ -156,6 +161,9 @@ th.complete-due-date, th.completed-date  {
         h1 {
             font-size: 90px;
             }
+            .stacker {
+                flex-direction: column;
+              }
         }
   
   @media only screen and (min-width: 800px) {
